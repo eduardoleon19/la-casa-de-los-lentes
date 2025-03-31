@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <!--SERVLET MONTURA-->
+    <servlet>
+        <servlet-name>servletMontura</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.servletMontura</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarBoletaServlet</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.EliminarBoletaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarVentaServlet</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.EliminarVentaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistroServlet</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.RegistroServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletMontura</servlet-name>
+        <url-pattern>/servletMontura</url-pattern>
+    </servlet-mapping>
+    <!--SERVLET PACIENTE-->
+    <servlet>
+        <servlet-name>servletPaciente</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.servletPaciente</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletPaciente</servlet-name>
+        <url-pattern>/servletPaciente</url-pattern>
+    </servlet-mapping>
+    <!--SERVLET VENTA-->
+    <servlet>
+        <servlet-name>servletVenta</servlet-name>
+        <servlet-class>com.mycompany.proyectofinal.servlet.servletVenta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletVenta</servlet-name>
+        <url-pattern>/servletVenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarBoletaServlet</servlet-name>
+        <url-pattern>/EliminarBoletaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarVentaServlet</servlet-name>
+        <url-pattern>/EliminarVentaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroServlet</servlet-name>
+        <url-pattern>/RegistroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <!-- Configuración de JSF -->
+    <context-param>
+        <param-name>jakarta.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>FacesServlet</servlet-name>
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FacesServlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+    <!-- ANGULAR -->
+    <servlet>
+        <servlet-name>Jersey REST Service</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.mycompany.proyectofinal.api</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Jersey REST Service</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+</web-app>

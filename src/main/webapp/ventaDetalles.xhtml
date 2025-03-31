@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Detalles de Venta</title>
+    </h:head>
+    <h:body>
+        <h2>Detalles de la Venta</h2>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Código Boleta:" />
+                <h:outputText value="#{beanVentas.venta.codigoBoleta}" />
+
+                <h:outputLabel value="Fecha Creación:" />
+                <h:inputText value="#{beanVentas.venta.fechaCreacion}" />
+
+                <h:outputLabel value="DNI Paciente:" />
+                <h:inputText value="#{beanVentas.venta.dniPaciente}" />
+                
+                <h:outputLabel value="IZQUIERDA:" />
+                <!--IZQUIERDA-->
+                <h:outputLabel value="Esfera Izq:" />
+                <h:inputText value="#{beanVentas.venta.esferaIzq}" />
+
+                <h:outputLabel value="Cilindro Izq:" />
+                <h:inputText value="#{beanVentas.venta.cilindroIzq}" />
+
+                <h:outputLabel value="Grado Izq:" />
+                <h:inputText value="#{beanVentas.venta.gradoIzq}" />
+
+                <h:outputLabel value="Distancia Izq:" />
+                <h:inputText value="#{beanVentas.venta.distanciaIzq}" />
+                
+                <h:outputLabel value="DERECHA:" />
+
+                <!--DERECHA-->
+                <h:outputLabel value="Esfera Der:" />
+                <h:inputText value="#{beanVentas.venta.esferaDer}" />
+
+                <h:outputLabel value="Cilindro Der:" />
+                <h:inputText value="#{beanVentas.venta.cilindroDer}" />
+
+                <h:outputLabel value="Grado Der:" />
+                <h:inputText value="#{beanVentas.venta.gradoDer}" />
+
+                <h:outputLabel value="Distancia Der:" />
+                <h:inputText value="#{beanVentas.venta.distanciaDer}" />
+                     
+                
+                <h:outputLabel value="DETALLES:" />
+
+                <!--DETALLES-->
+                <h:outputLabel value="Código Montura:" />
+                <h:inputText value="#{beanVentas.venta.codigoMontura}" />
+
+                <h:outputLabel value="Tipo de Luna:" />
+                <h:inputText value="#{beanVentas.venta.tipoLuna}" />
+
+                <h:outputLabel value="Costo Total:" />
+                <h:inputText value="#{beanVentas.venta.costoTotal}" />
+
+                <h:outputLabel value="Fecha Entrega:" />
+                <h:inputText value="#{beanVentas.venta.fechaEntrega}" />
+            </h:panelGrid>
+
+            <h:commandButton value="Actualizar" action="#{beanVentas.actualizarVenta}" />
+            <h:commandButton value="Eliminar" action="#{beanVentas.eliminarVenta}" 
+                             style="background-color:red;color:white;" />
+            <h:commandButton value="Volver" action="ventasLista?faces-redirect=true" />
+        </h:form>
+    </h:body>
+</html>

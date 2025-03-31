@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>Lista de Ventas</title>
+</head>
+<h:body>
+        <h2>Lista de Ventas</h2>
+        <h:form>
+            <h:dataTable value="#{beanVentas.listaVentas}" var="venta" border="1">
+                <h:column>
+                    <f:facet name="header">Código Boleta</f:facet>
+                    #{venta.codigoBoleta}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Fecha Creación</f:facet>
+                    #{venta.fechaCreacion}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">DNI Paciente</f:facet>
+                    #{venta.dniPaciente}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Código Montura</f:facet>
+                    #{venta.codigoMontura}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Costo Total</f:facet>
+                    #{venta.costoTotal}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Fecha Entrega</f:facet>
+                    #{venta.fechaEntrega}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Acciones</f:facet>
+                    <h:commandButton value="Ver Detalles" 
+                                     action="#{beanVentas.seleccionarVenta(venta.codigoBoleta)}" />
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>

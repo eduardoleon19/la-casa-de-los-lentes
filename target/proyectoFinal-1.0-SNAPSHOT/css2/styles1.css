@@ -1,0 +1,167 @@
+body {
+    background: #f0f6f5;
+}
+.body_navbar {
+    background: #53817b;
+}
+.sesion_navbar, .pages_navbar {
+    cursor: pointer;
+}
+
+.logo_img {
+    width: 7rem !important;
+    height: auto;
+}
+
+@media (min-width: 769px) {
+    /*NAVBAR*/
+    .body_navbar {
+        display: grid;
+        grid-template: auto / 0.7fr 0.3fr 0.1fr !important;
+        padding-right: 10px;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .logo_navbar {
+        justify-content: left !important;
+    }
+    .texto_navbar {
+        text-align: left !important;
+    }
+    /*FOOTER*/
+    .footer_div {
+        display: grid;
+        grid-template: auto / auto auto;
+    }
+    
+}
+
+
+
+@media (min-width: 480px) {
+    /*NAVBAR*/
+    .body_navbar {
+        display: grid;
+        position: fixed;
+        grid-template: auto / 0.3fr 1fr 0.3fr;
+        padding-right: 10px;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .pages_navbar {
+        display: grid;
+        grid-template: auto / auto auto auto auto;
+        padding-top: 1.7rem
+    }
+    .sesion_navbar {
+        padding-top: 1.2rem;
+    }
+    .logo_img {
+        width: 5rem !important;
+        height: auto;
+    }
+    
+    
+    .index_body {
+        padding-top: 8rem !important;
+    }
+    .index_card {
+        display: grid;
+        grid-template: auto / auto auto;
+    }
+    .index_img {
+        object-fit: cover;
+    }
+    
+    /*FOOTER*/
+    .index_footer {
+        background: black;
+        color: white
+    }
+    .footer_div {
+        padding: 1.5rem;
+    }
+    .footer_logo_div {
+        display: grid;
+        grid-template: auto / 1fr 2fr;
+    }
+    .copyright_text {
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 1rem;
+    }
+    
+}
+
+
+@media (min-width: 0px) {
+    /*NAVBAR*/
+    .body_navbar {
+        position: none;
+        padding-top: 1rem;
+    }
+    .logo_navbar {
+        justify-content: center;
+    }
+    .logo_img {
+        border-radius: 100%;
+        margin-bottom: 1rem;
+    }
+    .texto_navbar {
+        text-align: center;
+        padding-bottom: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+    .sesion_navbar {
+        background: #53817b;
+        width: 100%;
+        border-radius: 30px;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    .botones_general {
+        background: #16574f;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 0.5rem;
+        width: 100%;
+        border: none;
+    }
+    .index_body_container {
+        width: 100%;
+    }
+    .index_body {
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .index_card, .index_card_servicios {
+        width: 100%;
+        padding: 1rem;
+    }
+    .index_img {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+    
+    /*FOOTER*/
+    .index_footer {
+        background: black;
+        color: white
+    }
+    .footer_div {
+        padding: 1.5rem;
+    }
+    .footer_logo_div {
+        display: grid;
+        grid-template: auto / 1fr 2fr;
+    }
+    .copyright_text {
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 1rem;
+    }
+}

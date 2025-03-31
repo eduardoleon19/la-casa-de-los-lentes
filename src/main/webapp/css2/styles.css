@@ -1,0 +1,355 @@
+body {
+    background: #f0f6f5;
+}
+.body_navbar {
+    background: #53817b;
+}
+.sesion_navbar, .pages_navbar {
+    cursor: pointer;
+}
+
+.logo_img {
+    width: 7rem !important;
+    height: auto;
+}
+
+@media (min-width: 769px) {
+    /*NAVBAR*/
+    .body_navbar {
+        display: grid;
+        grid-template: auto / 0.7fr 0.3fr 0.1fr !important;
+        padding-right: 10px;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .logo_navbar {
+        justify-content: left !important;
+    }
+    .texto_navbar {
+        text-align: left !important;
+    }
+    /*VENTAS BODY*/
+    .ventas_body {
+        padding-top: 7rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .input_div {
+        display: grid;
+        grid-template: auto / 1fr 1fr 1fr 1fr !important;
+        gap: 1rem;
+    }
+    .boton_div_2 {
+        display: grid;
+        grid-template: auto / 2fr 1fr 2fr;
+        margin-top: 5rem;
+    }
+    
+    /*PRINCIPAL*/
+    .principal_body {
+        margin-left: 3rem !important;
+        margin-right: 3rem !important; 
+    }
+    .contenedor_carta_div {
+        grid-template: auto / auto auto auto auto !important;
+    }
+    .boton_div {
+        margin-top: 1rem !important;
+    }
+    /*MONTURA BODY*/
+    .monturas_body, .pacientes_body {
+        margin-left: 3rem !important;
+        margin-right: 3rem !important;
+    }
+    .datos_div, .pacientes_datos_div {
+        position: fixed;
+    }
+    .añadir_div, .pacientes_añadir_div {
+        margin-bottom: 3rem !important;
+    }
+    .contenedor_montura, .contenedor_paciente {
+        padding-left: 27rem;
+    }
+    .contenedor_montura_div {
+        display: grid;
+        grid-template: auto / auto auto auto auto !important;
+        gap: 1rem;
+    }
+    .carta_montura_div {
+        width: 100%;
+    }
+    .carta_montura_div img {
+        width: 100%;
+        height: auto;
+    }
+    /*PACIENTES BODY*/
+    .pacientes_datos_div {
+        width: 24rem;
+    }
+    .tabla_div {
+        overflow-x: hidden;
+        
+    }
+    table {
+        width: 100%;
+    }
+    
+    /*LOGIN*/
+    .body_login {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .login_div {
+        margin-top: 7rem !important;
+        border-radius: 40px;
+        height: 60vh !important;
+        width: 25vw !important;
+    }
+    .login_input_div {
+        margin-top: 7rem;
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    /*NAVBAR*/
+    .body_navbar {
+        display: grid;
+        position: fixed;
+        grid-template: auto / 0.3fr 1fr 0.3fr;
+        padding-right: 10px;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .pages_navbar {
+        display: grid;
+        grid-template: auto / auto auto auto auto;
+        padding-top: 1.7rem
+    }
+    .sesion_navbar {
+        padding-top: 1.2rem;
+    }
+    .logo_img {
+        width: 5rem !important;
+        height: auto;
+    }
+    /*VENTAS BODY*/
+    .ventas_body {
+        padding-top: 9rem;
+        margin-top: 0rem !important;
+    }
+    .input_div {
+        display: grid;
+        grid-template: auto / auto auto;
+        gap: 1rem;
+    }
+    /*VENTAS BODY*/
+    .principal_body {
+        margin-top: 0 !important;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 9rem;
+    }
+    .contenedor_carta_div {
+        display: grid;
+        grid-template: auto / auto auto;
+        gap: 1.5rem;
+    }
+    .carta_div {
+        border-radius: 40px;
+    }
+    
+    /*MONTURA BODY*/
+    .monturas_body, .pacientes_body {
+        padding-top: 9rem;
+        margin-top: 0 !important;
+    }
+    .contenedor_montura_div {
+        display: grid;
+        grid-template: auto / auto auto;
+        gap: 1rem;
+    }
+    /*LOGIN*/
+    .body_login {
+        padding: 8rem !important;
+    }
+    .logo_login {
+        top: 170px !important;
+    }
+    .nombre_apellido {
+        display: grid;
+        grid-template: auto / auto auto;
+        gap: 1.5rem;
+    }
+}
+
+
+@media (min-width: 0px) {
+    /*NAVBAR*/
+    .body_navbar {
+        position: none;
+        padding-top: 1rem;
+    }
+    .logo_navbar {
+        justify-content: center;
+    }
+    .logo_img {
+        border-radius: 100%;
+        margin-bottom: 1rem;
+    }
+    .texto_navbar {
+        text-align: center;
+        padding-bottom: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+    .sesion_navbar {
+        background: #53817b;
+        width: 100%;
+        border-radius: 30px;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    .botones_general {
+        background: #16574f;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 0.5rem;
+        width: 100%;
+        border: none;
+    }
+    /*VENTAS BODY*/
+    .ventas_body {
+        margin-top: 2.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .input_text {
+        border-radius: 100px;
+        background: #c1d7d4;
+        margin-bottom: 0.5rem;
+    }
+    .select_text {
+        border-radius: 100px;
+        background: #c1d7d4;
+        margin-bottom: 0.5rem;
+    }
+    /*PRINCIPAL BODY*/
+    .principal_body {
+        margin-top: 2.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .carta_div {
+        background: #c1d7d4;
+        border-radius: 30px;
+        padding: 2rem;
+        margin-bottom: 1.5rem
+    }
+    .fecha_entrega {
+        color: #53817b;
+        font-weight: bold;
+    }
+    .text_carta {
+        margin: 0;
+        line-height: 2;
+    }
+    .boton_div {
+        display: grid;
+        grid-template: auto / auto auto;
+        gap: 1rem;
+    }
+    
+    /*MONTURA BODY*/
+    .monturas_body, .pacientes_body {
+        margin-top: 2.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .datos_div, .carta_montura_div, .pacientes_datos_div{
+        background: #c1d7d4;
+        border-radius: 30px;
+        padding: 2rem;
+        margin-bottom: 1.5rem
+    }
+    .select_montura, .input_montura, .input_pacientes, .select_pacientes {
+        border-radius: 100px;
+        background: #f0f6f5;
+        margin-bottom: 0.5rem;
+    }
+    .categoria_div, .añadir_div {
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .codigo_montura {
+        margin-top: 1rem;
+    }
+    .carta_detalles_div {
+        display: grid;
+        grid-template: auto / auto auto;
+        justify-content: space-between;
+    }
+    .precio_montura {
+        font-weight: bold;
+        color: #53817b;
+    }    
+    
+    /*PACIENTES*/
+    .contenedor_paciente {
+        width: 100%;
+        
+    }
+    .tabla_div {
+        overflow-x: scroll;
+        
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+    /*LOGIN*/
+    .body_login {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .logo_login {
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        background: #f0f6f5;
+        padding: 1rem;
+        text-align: center;
+        top: 70px;
+    }
+    .login_img {
+        border-radius: 100%;
+        width: 8rem;
+        height: auto;
+    }
+    .login_div {
+        background: #c1d7d4;
+        padding: 2rem;
+        margin-top: 8rem;
+        border-radius: 40px;
+        height: 60vh;
+        width: 70vw;
+    }
+    .login_input_div {
+        margin-top: 5rem;
+    }
+    .input_login {
+        border-radius: 100px;
+        background: #f0f6f5;
+        margin-bottom: 0.5rem;
+    }
+    .login_register {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
